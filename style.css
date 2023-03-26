@@ -16,7 +16,7 @@ body {
 
 header {
   background-color: transparent;
-  padding: 1rem;
+  padding: 2rem;
   position: fixed;
   width: 100vw;
 }
@@ -25,7 +25,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  margin: 30px;
 }
 
 .left-links,
@@ -58,7 +58,7 @@ section {
 
 h2 {
   margin-bottom: 1.5rem;
-  font-size: 28px;
+  font-size: 38px;
   color: #ffff;
   border-bottom: 2px solid #ffff;
   padding-bottom: 0.5rem;
@@ -115,9 +115,10 @@ h2 {
 
 
 .slider-thumb::before {
-  position: absolute;
+  align-items: center;
+  position: fixed;
   content: "";
-  left: 30%;
+  left: 40%;
   top: 20%;
   width: 450px;
   height: 450px;
@@ -147,7 +148,8 @@ h2 {
   }
 }
 
-button {
+button{
+  margin: 10px;
   background: transparent;
   position: relative;
   padding: 5px 15px;
@@ -157,11 +159,11 @@ button {
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid rgb(40, 144, 241);
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 25px;
   outline: none;
   overflow: hidden;
-  color: rgb(40, 144, 241);
+  color: rgb(0, 0, 0);
   transition: color 0.3s 0.1s ease-out;
   text-align: center;
 }
@@ -189,10 +191,53 @@ button::before {
 }
 
 button:hover {
-  color: #fff;
-  border: 1px solid rgb(40, 144, 241);
+  color: #000000;
+  border: 1px solid rgb(55, 255, 139);
 }
 
 button:hover::before {
-  box-shadow: inset 0 0 0 10em rgb(40, 144, 241);
+  box-shadow: inset 0 0 0 10em rgb(55, 255, 139);
+}
+
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: rgb(55, 255, 139);
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
 }
