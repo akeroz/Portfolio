@@ -16,26 +16,24 @@
     <header>
         <nav>
             <div class="left-links">
-                <a  href="#about" data-text="Awesome" class="button">
+                <a  href="#about-all" data-text="Awesome" class="button">
                     <span class="actual-text">&nbsp;About&nbsp;</span>
                     <span class="hover-text" aria-hidden="true">&nbsp;About&nbsp;</span>
                 </a>
-                <a href="#parcours" data-text="Awesome" class="button">
+                <a href="#timeline" data-text="Awesome" class="button">
                     <span class="actual-text">&nbsp;parcours&nbsp;</span>
                     <span class="hover-text" aria-hidden="true">&nbsp;parcours&nbsp;</span>
                 </a>
-                <a href="#about" data-text="Awesome" class="button">
+                <a href="#projects" data-text="Awesome" class="button">
                     <span class="actual-text">&nbsp;Projets&nbsp;</span>
                     <span class="hover-text" aria-hidden="true">&nbsp;Projets&nbsp;</span>
                 </a>
-                <a href="#about" data-text="Awesome" class="button">
+                <a href="#contact" data-text="Awesome" class="button">
                     <span class="actual-text">&nbsp;Contact&nbsp;</span>
                     <span class="hover-text" aria-hidden="true">&nbsp;Contact&nbsp;</span>
                 </a>
             </div>
-            <div class="title-header">
-                <h2>Portfolio</h2>
-            </div>
+
             <div class="right-links">
                 <button class="btn1">
                     <svg viewBox="0 0 16 16" class="bi bi-linkedin" fill="currentColor" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
@@ -58,61 +56,97 @@
             <h1>Arthur Méry</h1>
             <h3>Développeur</h3>
         </div>
-    </main>
-    <section id="about">
-        <section id="a-propos">
-            <h2>À propos de moi</h2>
+    
+        <section id="about-all">
+            <section id="about">
+                <h2>À propos de moi</h2>
+                <p>
+                    Bonjour, je m'appelle Arthur Méry et je suis actuellement étudiant en deuxième année à l'EPSI de Bordeaux, 
+                    une école d'informatique réputée pour son expertise et la qualité de ses formations. 
+                    Passionné par l'univers du numérique et des technologies émergentes, je suis constamment à la recherche de nouvelles compétences à acquérir et de projets innovants sur lesquels travailler. 
+                </p>
+            </section>
+                <br>
+            <section id="hobbies">
+                <h2>Mes centres d'intérêt</h2>
+                <p>        
+                    Mon intérêt pour les jeux vidéo a commencé dès mon plus jeune âge et ne cesse de croître depuis.
+                    J'aime explorer différents genres de jeux et je suis particulièrement fasciné par l'aspect créatif et technique qui se cache derrière chaque titre.
+                    Depuis que j'ai découvert les cryptomonnaies, j'ai été captivé par leur potentiel disruptif et les perspectives d'avenir qu'elles offrent. 
+                    J'aime étudier les mécanismes et les technologies sous-jacentes, tels que la blockchain, pour mieux comprendre comment elles transforment le paysage financier et numérique. 
+                    Récemment, je me suis plongé dans l'univers passionnant du Web3, qui englobe des concepts tels que la décentralisation et les smart contrats. 
+                    Je suis convaincu que cette nouvelle approche du web ouvre la voie à des expériences numériques sans précédent et à une plus grande autonomie pour les utilisateurs.
+                </p>
+            </section>
+        </section>
+        <section id="parcours">
+            <h2>Mon parcours</h2>
+
+            <div class="container">
+                <div class="rightbox">
+                    <div class="rb-container">
+                        <ul class="rb">
+                            <li class="rb-item" ng-repeat="itembx">
+                                <div class="timestamp">
+                                    3rd May 2020<br> 7:00 PM
+                                </div>
+                                <div class="item-title">Chris Serrano posted a photo on your wall.</div>
+                            </li>
+                            <li class="rb-item" ng-repeat="itembx">
+                                <div class="timestamp">
+                                    19th May 2020<br> 3:00 PM
+                                </div>
+                                <div class="item-title">Mia Redwood commented on your last post.</div>
+                            
+                            </li>
+                
+                            <li class="rb-item" ng-repeat="itembx">
+                                <div class="timestamp">
+                                17st June 2020<br> 7:00 PM
+                                </div>
+                                <div class="item-title">Lucas McAlister just send you a message.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="skills">
+            <h2>Compétences</h2>
+
+        </section>
+
+        <section id="projects">
+            <h2>Projets</h2>
+            <div class="projet">
+                <h3>Projet 1</h3>
+                <p>Description du projet 1.</p>
+            </div>
+            <div class="projet">
+                <h3>Projet 2</h3>
+                <p>Description du projet 2.</p>
+            </div>
+            <div class="projet">
+                <h3>Projet 3</h3>
+                <p>Description du projet 3.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
             <p>
-                Bonjour, je m'appelle Arthur Méry et je suis actuellement étudiant en deuxième année à l'EPSI de Bordeaux, 
-                une école d'informatique réputée pour son expertise et la qualité de ses formations. 
-                Passionné par l'univers du numérique et des technologies émergentes, je suis constamment à la recherche de nouvelles compétences à acquérir et de projets innovants sur lesquels travailler. 
+                Si vous souhaitez me contacter, n'hésitez pas à m'envoyer un e-mail à <a href="arthurmery08@gmail.com">arthurmery08@gmail.com</a>.
             </p>
         </section>
-            <br>
-        <section id="centre-interet">
-            <h2>Mes centres d'intérêt</h2>
-            <p>        
-                Mon intérêt pour les jeux vidéo a commencé dès mon plus jeune âge et ne cesse de croître depuis.
-                J'aime explorer différents genres de jeux et je suis particulièrement fasciné par l'aspect créatif et technique qui se cache derrière chaque titre.
-                Depuis que j'ai découvert les cryptomonnaies, j'ai été captivé par leur potentiel disruptif et les perspectives d'avenir qu'elles offrent. 
-                J'aime étudier les mécanismes et les technologies sous-jacentes, tels que la blockchain, pour mieux comprendre comment elles transforment le paysage financier et numérique. 
-                Récemment, je me suis plongé dans l'univers passionnant du Web3, qui englobe des concepts tels que la décentralisation et les smart contrats. 
-                Je suis convaincu que cette nouvelle approche du web ouvre la voie à des expériences numériques sans précédent et à une plus grande autonomie pour les utilisateurs.
-            </p>
-        </section>
-    </section>
-    <section id="parcours">
-        <h2>Mon parcours</h2>
+    </main> 
+    <footer>
 
-    </section>
+        <p>Copyright © 2023 arthur-mery.fr / by arthurmry</p>
 
-    <section id="competences">
-        <h2>Compétences</h2>
+    </footer>
 
-    </section>
-
-    <section id="projets">
-        <h2>Projets</h2>
-        <div class="projet">
-            <h3>Projet 1</h3>
-            <p>Description du projet 1.</p>
-        </div>
-        <div class="projet">
-            <h3>Projet 2</h3>
-            <p>Description du projet 2.</p>
-        </div>
-        <div class="projet">
-            <h3>Projet 3</h3>
-            <p>Description du projet 3.</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            Si vous souhaitez me contacter, n'hésitez pas à m'envoyer un e-mail à <a href="arthurmery08@gmail.com">arthurmery08@gmail.com</a>.
-        </p>
-    </section>
 
 </body>
 
