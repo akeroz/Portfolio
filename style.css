@@ -209,7 +209,7 @@ button:hover::before {
 
 /* button styling */
 .button {
-  --border-right: 6px;
+  --border-right: 3px;
   --text-stroke-color: rgba(255,255,255,0.6);
   --animation-color: rgb(55, 255, 139);
   --fs-size: 1em;
@@ -322,4 +322,54 @@ ul.rb li .timestamp {
   position: absolute;
 }
 
+
+.social-links,.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  border-radius: 50px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  background: #212121;
+  margin: 5px;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.social-btn svg {
+  height: 24px;
+  width: 24px;
+}
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.social-btn:hover {
+  width: 200px;
+  border-radius: 60px;
+}
+
+.social-btn:hover span {
+  width: 120px;
+}
+
+
+#linkedin svg {
+  fill: #0e76a8;
+}
+
+#github {
+  fill: #fffcfc;
+}
 
