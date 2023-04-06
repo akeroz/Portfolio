@@ -435,10 +435,10 @@ ul.rb li .timestamp {
 
 .card:nth-child(even) {
   align-self: flex-end;
-  margin-right: 50px;
+  margin-right: 5em;
 }
 
 .card:nth-child(odd) {
   align-self: flex-start;
-  margin-left: 50px;
+  margin-left: 5em;
 }
