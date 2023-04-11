@@ -10,8 +10,9 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   color: #fff;
-  height: 100vh;
-  background: linear-gradient(90deg, #000000, #727272)
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #000000, #727272) no-repeat;
 }
 
 header {
@@ -132,7 +133,7 @@ h2 {
 }
 
 .presentation h1 {
-  font-size: 150px;
+  font-size: 10vw;
   text-align: center;
   color: #50d890
 }
@@ -302,15 +303,14 @@ button:hover::before {
 }
 
 .container {
-  width: 540px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   position: relative;
-  margin: 5% 0 5% 10%;
+  margin-bottom: 20vw;
 }
 
 .rightbox {
-  padding: 0em 34rem 0em 0em;
-  height: 100%
+  height: 100%;
 }
 
 .rb-container {
@@ -328,10 +328,9 @@ button:hover::before {
 
 .rb-container ul.rb li {
   list-style: none;
-  margin-left: 10em;
   min-height: 50px;
   border-left: 1px dashed #fff;
-  padding: 0 0 50px 30px;
+  padding: 0 0 50 30;
   position: relative
 }
 
