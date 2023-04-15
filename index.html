@@ -13,15 +13,15 @@
     <div class="slider-thumb"></div>
     <header>
         <nav>
-            <div class="left-links"><a href="#about" data-text="Awesome" class="button"><span
-                        class="actual-text"> About </span><span class="hover-text"
-                        aria-hidden="true"> About </span></a><a href="#timeline" data-text="Awesome"
-                    class="button"><span class="actual-text"> parcours </span><span class="hover-text"
-                        aria-hidden="true"> parcours </span></a><a href="#projects" data-text="Awesome"
-                    class="button"><span class="actual-text"> Projets </span><span class="hover-text"
-                        aria-hidden="true"> Projets </span></a><a href="#contact" data-text="Awesome"
-                    class="button"><span class="actual-text"> Contact </span><span class="hover-text"
-                        aria-hidden="true"> Contact </span></a></div>
+            <div class="left-links">
+                <a href="#about" data-text="Awesome" class="button"><span class="actual-text"> About </span>
+                <span class="hover-text" aria-hidden="true"> About </span></a>
+                <a href="#timeline" data-text="Awesome" class="button"><span class="actual-text"> Parcours </span>
+                <span class="hover-text" aria-hidden="true"> parcours </span></a>
+                <a href="#projects" data-text="Awesome" class="button"><span class="actual-text"> Projets </span>
+                <span class="hover-text" aria-hidden="true"> Projets </span></a>
+                <a href="#contact" data-text="Awesome" class="button"><span class="actual-text"> Contact </span>
+                <span class="hover-text" aria-hidden="true"> Contact </span></a></div>
             <div class="right-links">
                 <div class="social-links"><a href="https://www.linkedin.com/in/arthur-mery/">
                         <div id="linkedin" class="social-btn flex-center"><svg viewBox="0 0 24 24" height="24"
@@ -49,16 +49,16 @@
         </div>
 
 
-        <section class="cards">
+        <section id="about" class="cards">
             <div class="card">
-                <h2>À propos de moi</h2>
+                <h3>À propos de moi</h3>
                 <p class="fs-20">Bonjour, je m'appelle Arthur Méry et je suis actuellement étudiant en 2ème année à l'EPSI de
                     Bordeaux.<br>
                     Passionné par l'univers du numérique et des technologies émergentes, je suis constamment à la
                     recherche de nouvelles compétences à acquérir et de projets innovants sur lesquels travailler. </p>
             </div>
             <div class="card">
-                <h2>Mes centres d'intérêt</h2>
+                <h3>Mes centres d'intérêt</h3>
                 <p class="fs-20">
                     Passionné de jeux vidéos depuis mon enfance, j'apprecie particulièrement leur aspect créatif. 
                     Je suis également passionné par les cryptomonnaies et leurs technologies, comme la blockchain 
@@ -94,42 +94,71 @@
         </section>
 
         <section id="skills">
-            <h2>Compétences</h2>
-            <div class="all-skills">
-                <img  src="images\icons-html.png"><a class="comp">HTML</a>
-                <img  src="images\icons-css.png"><a class="comp">CSS</a>
-                <img  src="images\icons-javascript.png"><a class="comp">JavaScript</a>
-                <img  src="images\icons-react.png"><a class="comp">React</a>
-                <img  src="images\icons-github.png"><a class="comp">GitHub</a>
-            </div>
-
+            <h2 class="skills-title">Compétences</h2>
+                <div class="skills-cards">
+                    <div class="skill-card">
+                        <img  src="images\icons-html.png" style="max-width: 100%;">
+                        <p class="fs-20">HTML</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <img  src="images\icons-css.png" style="max-width: 100%;">
+                        <p class="fs-20">CSS</p>
+                    </div>
+                    <div class="skill-card">
+                        <img  src="images\icons-javascript.png" style="max-width: 100%;">
+                        <p class="fs-20">JavaScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <img  src="images\icons-react.png" style="max-width: 100%;">
+                        <p class="fs-20">React</p>
+                    </div>
+                    <div class="skill-card">
+                        <img  src="images\icons-github.png" style="max-width: 100%;">
+                        <p class="fs-20">GitHub</p>
+                    </div>
+                </div>
         </section>
 
         <section id="projects">
-            <h2>Projets</h2>
+            <h2 class="projects-title"   >Projets</h2>
             <div class="projet">
                 <h3>Projet 1</h3>
-                <p>Description du projet 1.</p>
-            </div>
-            <div class="projet">
-                <h3>Projet 2</h3>
-                <p>Description du projet 2.</p>
-            </div>
-            <div class="projet">
-                <h3>Projet 3</h3>
-                <p>Description du projet 3.</p>
+                <p>Portfolio actuel</p> 
+                    <p>( HTML / CSS / JavaScript )</p>
             </div>
         </section>
 
         <section id="contact">
-            <h2>Contact</h2>
-            <p>
-                Si vous souhaitez me contacter, n'hésitez pas à m'envoyer un e-mail à <a
-                    href="arthurmery08@gmail.com">arthurmery08@gmail.com</a>. </p>
+            <h2 class="contact-title">Contact</h2>
+            <div id="form-div">
+                <form class="form" id="form1">
+                
+                    <p class="name">
+                        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nom" id="nom" />
+                    </p>
+                    
+                    <p class="email">
+                        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                    </p>
+
+                    <p class="sujet">
+                        <input name="sujet" class="validate[required,length[6,300]] feedback-input" id="sujet" placeholder="Sujet"></input>
+                    </p>
+                    
+                    <p class="text">
+                        <textarea name="message" class="validate[required,length[6,300]] feedback-input" id="message" placeholder="Message"></textarea>
+                    </p>
+
+                    <div class="submit">
+                        <input type="submit" value="SOUMETTRE" id="button-blue"/>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
-        <p>Copyright © 2023 arthur-mery.fr / by arthurmry</p>
+        <p class="cpr">Copyright © 2023 arthur-mery.fr / by arthurmry</p>
     </footer>
 </body>
 
