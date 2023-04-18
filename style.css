@@ -511,4 +511,9 @@ textarea {
     max-width: 100%;
     width: auto;
   }
+  .left-links{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
 }
