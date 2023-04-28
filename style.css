@@ -25,7 +25,8 @@ header {
   position: fixed;
   width: 100%;
   z-index:1;
-  background-color: #000000;
+  background-color: #8f859921;
+  background-blend-mode: darken;
   backdrop-filter: blur(50px);
   box-sizing: border-box;
 }
@@ -147,7 +148,7 @@ p{
 
 .presentation {
   padding-top: 20vh;
-  padding-bottom: 18vh;
+  padding-bottom: 8vh;
 }
 
 .presentation h1 {
@@ -289,7 +290,7 @@ button::before {
   cursor: pointer;
 }
 
-.card {
+.card { 
   padding: 15px 40px;
   margin-top: 10%;
   width: 45%;
