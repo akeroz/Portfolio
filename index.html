@@ -115,7 +115,7 @@
         <section id="contact">
             <h3 class="contact-title">Contact</h3>
             <div id="form-div">
-                <form class="form" id="form1" autocomplete="off">
+                <form class="form" action="process.php" method="post" id="form1" autocomplete="off">
                 
                     <p class="name">
                         <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nom" id="nom" />
@@ -125,8 +125,8 @@
                         <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
                     </p>
 
-                    <p class="sujet">
-                        <input name="sujet" class="validate[required,length[6,300]] feedback-input" id="sujet" placeholder="Sujet"></input>
+                    <p class="titre">
+                        <input name="titre" class="validate[required,length[6,300]] feedback-input" id="sujet" placeholder="Sujet"></input>
                     </p>
                     
                     <p class="text">
@@ -156,6 +156,32 @@
                     </a></div>
             </div>
         </section>
+        <script src="https://unpkg.com/@formspree/core@^2.2.4"></script>
+            <script>
+            const form = document.getElementById('form1');
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const formData = new FormData(form);
+                const formOptions = {
+                headers: {
+                    'Accept': 'application/json'
+                },
+                method: 'POST',
+                body: formData
+                };
+                fetch('https://formspree.io/f/mzbqodrd', formOptions)
+                .then(response => {
+                    if (!response.ok) {
+                    throw new Error('Erreur lors de l\'envoi du formulaire');
+                    }
+                    alert('Le formulaire a été soumis avec succès!');
+                    form.reset();
+                })
+                .catch(error => { 
+                    alert(error.message);
+                });
+            });
+            </script>
     </main>
     <footer>
         <p class="cpr">Copyright © 2023 arthur-mery.fr / by arthurmry</p>
